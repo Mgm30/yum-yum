@@ -1,1 +1,108 @@
-*, :before, :after {box-sizing:border-box;}
+*, :before, :after {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Lato, sans-serif;
+}
+/*funtes de titulos*/
+h1,h2, input[type="submit"]{
+    font-family: Intro;
+    text-transform: uppercase;
+}
+/*colores*/
+h1{
+    color: #fa7344;
+}
+nav p{
+    filter: invert(69%) sepia(0%) saturate(2255%) hue-rotate(251deg) brightness(88%) contrast(102%);
+}
+input[type="submit"]{
+    background-color: #fa7344;
+    color: white;
+}
+h2{
+    color: white;
+}
+.form{
+    background: rgb(188,217,59);
+    background: linear-gradient(165deg, rgba(188,217,59,1) 35%, rgba(116,204,82,1) 100%);
+}
+form label{
+    background-color: white;
+}
+
+header{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 4fr 6fr;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav div h1{
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+    letter-spacing: 2px;
+    
+}
+nav div p{
+    font-size:xx-small;
+    margin-bottom: 10px;
+}
+nav img{
+    height: 21px;
+    width:21px;
+    margin-top: 6px;
+    filter: invert(59%) sepia(9%) saturate(16%) hue-rotate(314deg) brightness(85%) contrast(82%);
+}
+header div.hero{
+    background: url(https://via.placeholder.com/300);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.form{
+    padding: 20px;
+}
+.form >h2, form label:nth-child(2){
+    margin-bottom: 20px; 
+    
+}
+.form > h2 {
+    font-size: 1.5rem;
+}
+form label{
+    display:flex;
+    justify-content: space-around;
+    border: 1px solid gray;
+    padding: 1rem;
+    border: none;
+    
+}
+form label:nth-child(2){
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+form label:nth-child(1){
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+form label img {
+    height:15px;
+    filter: invert(59%) sepia(15%) saturate(4440%) hue-rotate(331deg) brightness(99%) contrast(99%);
+}
+
+form label input {
+    border:none;
+}
+input[type="submit"]{
+    padding: 20px;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    border-radius: 5px;
+}
