@@ -2,17 +2,18 @@
     box-sizing:border-box;
     margin:0;
     padding:0;
+    counter-reset: li;
 }
 body{
     font-family: Lato, sans-serif;
 }
 /*funtes de titulos*/
-h1,h2, input[type="submit"]{
+h1,h2,h3, input[type="submit"]{
     font-family: Intro;
     text-transform: uppercase;
 }
 /*colores*/
-h1{
+h1, .works h2{
     color: #fa7344;
 }
 nav p{
@@ -22,7 +23,7 @@ input[type="submit"]{
     background-color: #fa7344;
     color: white;
 }
-h2{
+header h2{
     color: white;
 }
 .form{
@@ -79,8 +80,9 @@ form label{
     display:flex;
     justify-content: space-around;
     border: 1px solid gray;
-    padding: 1rem;
     border: none;
+    padding: 1rem;
+
     
 }
 form label:nth-child(2){
@@ -105,4 +107,36 @@ input[type="submit"]{
     border: none;
     border-radius: 5px;
     border-radius: 5px;
+}
+/*________________________________________________________________*/
+
+.works h2{
+    padding: 40px;
+    text-align: center;
+}
+.works ul li div h3{
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.works ul li div p{
+    filter: invert(69%) sepia(0%) saturate(2255%) hue-rotate(251deg) brightness(88%) contrast(102%);
+    margin-right: 10px;
+}
+.works ul li div ::before{
+    
+    content: decimal counter(property) ". ";
+    counter-increment: property;
+    counter-reset: val;
+}
+.works ul li{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 3fr 3fr 3fr;
+}
+
+.works ul img{
+    height: 60px;
+    width: 60px;
+    margin-left: 50px;
 }
